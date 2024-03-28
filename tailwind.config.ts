@@ -22,7 +22,9 @@ const config: Config = {
       colors: {
         'faff-pink': "rgb(255 175 243)",
         'brown-pink': "rgb(88 67 85)",
-        'white-fefe': "rgb(254 254 252)"
+        'white-fefe': "rgb(254 254 252)",
+        'plastic-yellow': 'rgb(255 251 232)',
+        'underwatter-blue': 'rgb(41 45 62)'
       }
     },
     fontSize: {

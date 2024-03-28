@@ -2,6 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --nav-height: 84px;
+}
+
+@layer components {
+  .container {
+    max-width: 60rem;
+    width: 60rem;
+  }
+
+  .pt-hero-nav {
+    padding-top: calc(var(--nav-height) + 40px);
+  }
+
+  .navbar-blur {
+    background-color: transparent;
+    backdrop-filter: blur(7px);
+  }
+
+  .code-keyword {
+    color: rgb(255, 213, 150);
+  }
+  .code-module {
+    color: rgb(255, 221, 250);
+  }
+
+  .code-fn {
+    color: rgb(156, 231, 255);
+  }
+
+  .code-string {
+    color: rgb(200, 255, 167);
+  }
+}
+
 @layer base {
   html {
     font-family: "Outfit-R", "sans-serif";
@@ -9,28 +44,21 @@
   @font-face {
     font-family: "Lexend-R";
     font-size: "18px";
-    src: url('../../public/fonts/Lexend-Regular.ttf');
+    src: url("../../public/fonts/Lexend-Regular.ttf");
   }
   @font-face {
     font-family: "Lexend-B";
     font-size: "18px";
-    src: url('../../public/fonts/Lexend-Bold.ttf');
+    src: url("../../public/fonts/Lexend-Bold.ttf");
   }
   @font-face {
     font-family: "Outfit-R";
     font-size: "18px";
-    src: url('../../public/fonts/Outfit-Regular.ttf');
+    src: url("../../public/fonts/Outfit-Regular.ttf");
   }
   @font-face {
     font-size: "18px";
     font-family: "Outfit-B";
-    src: url('../../public/fonts/Outfit-Bold.ttf');
-  }
-}
-
-@layer components{
-  .container {
-    max-width: 60rem;
-    width: 60rem;
+    src: url("../../public/fonts/Outfit-Bold.ttf");
   }
 }
