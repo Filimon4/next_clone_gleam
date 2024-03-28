@@ -4,7 +4,7 @@ const Description = () => {
   return (
     <section className='container flex gap-[40px] justify-between items-center m-auto text-white-fefe pb-[40px] px-[20px]'>
       <div className='max-w-full w-[30rem] flex-1'>
-        <p className='my-[1rem] text-pair-text'>
+        <p className='my-[1rem] text-pair-text leading-[1.3] tracking-[0.5px]'>
           The power of a type system, the expressiveness of functional
           programming, and the reliability of the highly concurrent, fault
           tolerant Erlang runtime, with a familiar and modern syntax.

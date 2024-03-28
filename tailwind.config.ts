@@ -24,7 +24,8 @@ const config: Config = {
         'brown-pink': "rgb(88 67 85)",
         'white-fefe': "rgb(254 254 252)",
         'plastic-yellow': 'rgb(255 251 232)',
-        'underwatter-blue': 'rgb(41 45 62)'
+        'underwatter-blue': 'rgb(41 45 62)',
+        'blacker': 'rgb(21 21 21)'
       }
     },
     fontSize: {

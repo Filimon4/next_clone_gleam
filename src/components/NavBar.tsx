@@ -4,7 +4,7 @@ import normalStar from "../../public/star/normalStart.svg";
 
 const NavBar = () => {
   return (
-    <div className="m-auto flex w-full max-w-full items-center justify-center fixed z-10 navbar-blur">
+    <div className="navbar-blur fixed z-10 m-auto flex w-full max-w-full items-center justify-center">
       <nav className="container flex items-center justify-between p-5 font-Lexend">
         <div>
           <a className="flex flex-nowrap items-center gap-3 text-logo" href="">
