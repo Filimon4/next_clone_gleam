@@ -2,32 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer base {
+  html {
+    font-family: "Outfit-R", "sans-serif";
+  }
+  @font-face {
+    font-family: "Lexend-R";
+    font-size: "18px";
+    src: url('../../public/fonts/Lexend-Regular.ttf');
+  }
+  @font-face {
+    font-family: "Lexend-B";
+    font-size: "18px";
+    src: url('../../public/fonts/Lexend-Bold.ttf');
+  }
+  @font-face {
+    font-family: "Outfit-R";
+    font-size: "18px";
+    src: url('../../public/fonts/Outfit-Regular.ttf');
+  }
+  @font-face {
+    font-size: "18px";
+    font-family: "Outfit-B";
+    src: url('../../public/fonts/Outfit-Bold.ttf');
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@layer components{
+  .container {
+    max-width: 60rem;
+    width: 60rem;
   }
 }
