@@ -35,6 +35,48 @@
   .code-string {
     color: rgb(200, 255, 167);
   }
+
+  .code-operator {
+    color: rgb(255, 175, 243);
+  }
+
+  .code-prompt {
+    color: rgb(132, 132, 132);
+  }
+
+  .code-success {
+    color: rgb(200, 255, 167);
+  }
+
+  .code-error {
+    color: rgb(255, 98, 98);
+  }
+
+  .community-grad {
+    background: linear-gradient(
+      0deg,
+      rgb(255, 175, 243) 0%,
+      rgb(254, 254, 252) 300%
+    );
+  }
+  .community-grad-rev {
+    background: linear-gradient(
+      180deg,
+      rgb(255, 175, 243) 0%,
+      rgb(254, 254, 252) 250%
+    );
+  }
+
+  .link-otto::before {
+    content: "";
+    background-image: url("../../public/other/otto.svg");
+    background-size: cover;
+    height: 25px;
+    left: 0;
+    position: absolute;
+    top: -4px;
+    width: 18px;
+  }
 }
 
 @layer base {
