@@ -4,15 +4,12 @@ import React from "react";
 import Image from "next/image";
 import noramlStar from "../../public/star/normalStart.svg";
 import { motion } from 'framer-motion'
+import waves from '../../public/waves/waves1.svg'
 
 const Hero = () => (
-  <div className="pt-hero-nav bg-plastic-yellow">
-    <div className="container m-auto flex items-center gap-14">
-      <motion.div
-        initial={{rotate: ["0deg", "180deg"], scale: [1, 1.3]}}
-        whileInView={{rotate: ["180deg","0deg"], scale: [1.3, 1]}}
-        viewport={{once: true}}
-      >
+  <div className="pt-hero-nav bg-plastic-yellow pb-[var(--waves-height)] relative">
+    <div className="container m-auto flex items-center gap-14 pb-[40px] pt-[20px]">
+      <motion.div>
         <Image
           className="rotate-[-10deg] pb-[30px] pl-[60px] pr-[60px] pt-[10px]"
           src={noramlStar}
@@ -42,7 +39,7 @@ const Hero = () => (
         </a>
       </motion.div>
     </div>
-    {/* <Image src={} alt="" /> */}
+    <Image className={`h-[var(--waves-height)] absolute bottom-[-7px] waves-home`} src={waves} alt="" />
   </div>
 );
 

@@ -4,6 +4,8 @@
 
 :root {
   --nav-height: 84px;
+  --waves-height: 100px;
+  --minify-people: 500px;
 }
 
 @layer components {
@@ -76,6 +78,20 @@
     position: absolute;
     top: -4px;
     width: 18px;
+  }
+
+  .waves-home {
+    --waves-width: 1200px;
+    --overlap: 5px;
+    width: 100%;
+    min-width: var(--waves-width);
+    left: min(0px, calc(calc(100vw - var(--waves-width))* 0.2));
+  }
+
+  .invite-background-star {
+    --width-content: 960px;
+    --lucy-x: min(-80px, calc(100vw - var(--width-content) - 400px)) ;
+    background: url("../../public/star/mailStar.svg") var(--lucy-x) 120% / 350px auto no-repeat, linear-gradient(180deg,rgb(255, 175, 243) 0%, rgb(254, 254, 252) 250%);
   }
 }
 
