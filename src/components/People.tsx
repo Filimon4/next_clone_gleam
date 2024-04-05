@@ -7,7 +7,7 @@ const People = () => {
   const [expanded, setExpanded] = useState(false)
 
   return (
-    <section className={`m-auto w-full pb-[20px] relative ${expanded ? "h-[100%]" : "h-[var(--minify-people)]"}`}>
+    <section className={`overflow-hidden m-auto w-full pb-[20px] relative ${expanded ? "h-[100%]" : "h-[var(--minify-people)]"}`}>
       <div className="container text-white-fefe m-auto px-[20px] text-center">
         <h2 className="text-sponsore-title">Lovely people</h2>
         <p className="mt-[30px] mb-[50px]">

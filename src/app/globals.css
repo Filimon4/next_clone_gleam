@@ -75,8 +75,8 @@
     background-size: cover;
     height: 25px;
     left: 0;
+    bottom: -4px;
     position: absolute;
-    top: -4px;
     width: 18px;
   }
 

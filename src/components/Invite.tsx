@@ -54,7 +54,7 @@ const Invite = () => {
                     <a
                       href="https://emailoctopus.com/?utm_source=powered_by_form&amp;utm_medium=user_referral"
                       target="_blank"
-                      className={`link-otto ml-[5px] pl-[23px]`}
+                      className={`link-otto ml-[5px] pl-[23px] relative`}
                     >
                       EmailOctopus
                     </a>
@@ -64,6 +64,8 @@ const Invite = () => {
             </div>
           </div>
         </div>
+        <p className="my-[20px] leading-[1.3] tracking-[0.5px]">We send emails at most a few times a year, and we{"'"}ll never share your email with anyone else.</p>
+        <p className="my-[20px] opacity-[0.8] text-small text-blacker">This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
       </div>
     </section>
   );
