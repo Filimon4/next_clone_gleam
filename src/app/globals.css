@@ -93,6 +93,24 @@
     --lucy-x: min(-80px, calc(100vw - var(--width-content) - 400px)) ;
     background: url("../../public/star/mailStar.svg") var(--lucy-x) 120% / 350px auto no-repeat, linear-gradient(180deg,rgb(255, 175, 243) 0%, rgb(254, 254, 252) 250%);
   }
+
+  .three-dots::before {
+    content: "\2026";
+    position: absolute;
+    color: rgb(254 254 252);
+    width: 100%;
+    top: 50px;
+    left: 0;
+    text-align: center;
+    transform: rotate(180deg);
+    height: 50px;
+    font-size: 75px;
+    cursor: pointer;
+  }
+
+  .three-dots-bg-grad {
+    background: linear-gradient(0deg, rgb(41 45 62) 30%, transparent 100%);
+  }
 }
 
 @layer base {

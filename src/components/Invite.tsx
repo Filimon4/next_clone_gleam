@@ -2,7 +2,7 @@ import React from "react";
 
 const Invite = () => {
   return (
-    <section className="invite-background-star w-full text-center relative z-10">
+    <section className="invite-background-star w-full text-center relative z-10 ">
       <div className="container m-auto p-[20px] py-[60px]">
         <h2 className="mb-[20px] block text-still-here-title">
           You{`'`}re still here?
