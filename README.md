@@ -1,4 +1,5 @@
 ## Tech Stack
-CSS/UI: Tailwind/shadcnUI 
-DB/DB ORM: MySQL/Prisma
-Lan: Typescript
+Framerwork: Nexts <br/>
+Front-end: React <br />
+Animations: Framer-motion <br/>
+Lang: Typescript
