@@ -1,6 +1,9 @@
-import React from "react";
+"use client"
+
+import React, { useState } from "react";
 import Image from "next/image";
 import normalStar from "../../public/star/normalStart.svg";
+import { motion } from 'framer-motion'
 
 const NavBar = () => {
   return (
@@ -13,30 +16,41 @@ const NavBar = () => {
           </a>
         </div>
         <div>
-          <a className="ml-5 text-normal" href="">
-            News
-          </a>
-          <a className="ml-5 text-normal" href="">
-            Community
-          </a>
-          <a className="ml-5 text-normal" href="">
-            Sponsor
-          </a>
+          <NavLink text={"News"} />
+          <NavLink text={"Community"}/>
+          <NavLink text={"Sponsor"}/>
         </div>
         <div>
-          <a className="ml-5 text-normal" href="">
-            Packages
-          </a>
-          <a className="ml-5 text-normal" href="">
-            Docs
-          </a>
-          <a className="ml-5 text-normal" href="">
-            Code
-          </a>
+          <NavLink text={"Packages"} />
+          <NavLink text={"Docs"} />
+          <NavLink text={"Code"} />
         </div>
       </nav>
     </div>
   );
 };
+
+const NavLink = ({text}: {text: string}) => {
+  return (
+    <motion.a 
+    className="relative ml-5 text-normal" href=""
+    initial={"free"}
+    whileHover={"hover"}
+    >
+      {text}
+      <motion.span 
+        className={`absolute w-full bottom-0 h-[2px] left-0 bg-black`}
+        variants={{
+          "free": {
+            width: "0%",
+          },
+          "hover": {
+            width: "100%",
+          }
+        }}
+      />
+    </motion.a>
+  )
+}
 
 export default NavBar;
