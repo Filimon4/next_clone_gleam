@@ -39,11 +39,11 @@ const People = () => {
         </motion.div>
         {!expanded &&
           <a href="/" 
-          onClick={(e)=>{
-            e.preventDefault()
-            setExpanded(true)
-          }} 
-          className="h-[50px] absolute bottom-0 w-full three-dots three-dots-bg-grad"
+            onClick={(e)=>{
+              e.preventDefault()
+              setExpanded(true)
+            }} 
+            className="h-[50px] absolute bottom-0 w-full three-dots three-dots-bg-grad"
           >
           </a>
         }
