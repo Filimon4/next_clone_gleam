@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import noramlStar from "../../public/star/normalStart.svg";
 import happyStar from '../../public/star/happyStar.svg'
+import framerMotionLogo from "../../public/framerLogo/framer-motion.svg"
 import { motion } from 'framer-motion'
 import waves from '../../public/waves/waves1.svg'
 
@@ -29,9 +30,9 @@ const Hero = () => {
         >
           <Image
             className="rotate-[-10deg] pb-[30px] pl-[60px] pr-[60px] pt-[10px]"
-            src={!starHover ? noramlStar : happyStar}
-            width={400}
-            height={307}
+            src={framerMotionLogo}
+            width={340}
+            height={247}
             alt={""}  
           />
         </motion.div>
@@ -43,16 +44,15 @@ const Hero = () => {
           <motion.div
             className="font-Lexend-R block w-[22rem] text-hero"
           >
-            <b className="font-Lexend-B">Gleam</b> is a{" "}
-            <b className="font-Lexend-B">friendly</b> language for building{" "}
-            <b className="font-Lexend-B">type-safe</b> systems that{" "}
-            <b className="font-Lexend-B">scale!</b>
+            <b className="font-Lexend-B">Framer Motion</b> is a{" "}
+            <b className="font-Lexend-B">friendly</b> library for building{" "}
+            <b className="font-Lexend-B">awesome</b> animation{" "}
           </motion.div>
           <a
             className="bg-brown-pink inline-block text-white-fefe mt-[20px] rounded-[100px] px-[40px] py-[10px] text-hero-button"
             href=""
           >
-            Try Gleam
+            Try Framer
           </a>
         </motion.div>
       </div>

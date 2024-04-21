@@ -2,18 +2,16 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import normalStar from "../../public/star/normalStart.svg";
+import framerMotionLogo from "../../public/framerLogo/framer-motion.svg"
 import { motion } from 'framer-motion'
+import Logo from "./utils/Logo";
 
 const NavBar = () => {
   return (
     <div className="z-50 navbar-blur fixed m-auto flex w-full max-w-full items-center justify-center bg-plastic-yellow bg-opacity-[0.25] shadow-md">
       <nav className="container flex items-center justify-between p-5 font-Lexend">
         <div>
-          <a className="flex flex-nowrap items-center gap-3 text-logo" href="">
-            <Image width={42} height={42} src={normalStar} alt={""} />
-            Gleam
-          </a>
+          <Logo />
         </div>
         <div>
           <NavLink text={"News"} />

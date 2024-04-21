@@ -12,9 +12,6 @@ const Community = () => {
           world, of all backgrounds, genders, and experience levels are welcome
           and respected equally. See our community code of conduct for more.
         </p>
-        <p className="text-friendly-text my-[1em]">
-          Black lives matter. Trans rights are human rights. No nazi bullsh*t.
-        </p>
       </div>
       <Image className={`h-[var(--waves-height)] absolute bottom-[-7px] waves-home`} src={waves} alt="" />
     </section>
